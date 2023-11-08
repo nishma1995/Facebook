@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+
+}
+.container
+{
+
+    display:flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items:center;
+    background: #f0f2f5;
+    
+}
+.facebook-page
+{ 
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    max-width: 1000px;
+    width:100%;
+}
+.facebook-page .text
+{
+    margin-bottom: 90px;
+    line-height: 5px;
+    
+    
+}
+.facebook-page h1{
+    color:#1877f2;
+    font-size: 55px;
+    margin-block:10px;
+    text-transform: lowercase;
+    line-height: 50px;
+    
+    }
+.facebook-page p{
+    
+line-height: 1px;
+    font-size:28px;
+    white-space: nowrap;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    max-width: 400px;
+    width:100%;
+    padding:20px;
+   
+}
+.form input{
+    height:55px; 
+    border:1px solid #cccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    padding:0 14px;
+   
+
+
+}
+.form input:focus{
+    border-color:#1877f2;
+    outline: none;
+}
+::placeholder{
+    font-size: 17px;
+    color:#777;
+
+}
+.link
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+.link .login-button{
+    outline:none;
+    border:none;
+    cursor:pointer;
+    background:#1877f2;
+    padding:15px 0 ;
+    color:#fff;
+    border-radius:6px;
+    font-size:20px;
+    font-weight: 600;
+       transition: 0.2s ease;
+
+}
+.link .login-button:hover{
+    background: #0d65d9;
+
+}
+form a{
+    text-decoration:none;
+}
+.link .forget-password-button
+{
+    color:#1877f2;
+    font-size: 14px;
+}
+.link .forget-password-button
+:hover{
+    text-decoration: underline;
+}
+hr{
+    border:none;
+    background-color: #ccc;
+    margin:20px 0;
+    height:1px;
+}
+.create-new-button
+{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.create-new-button a{
+    padding: 15px 20px;
+    background: #42b72a;
+    border-radius: 6px;
+     
+    color:#fff;
+    font-size: 17px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+.create-new-button a:hover{
+    background-color: #3ba626;
+}
+@media (max-width:900px)
+{
+    .facebook-page
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+    .facebook-page .text{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:450px)
+{
+    .facebook-page h1{
+        font-size: 56px;
+    }
+    .facebook-page p{
+        font-size: 20.8px;
+        
+    }
+    form {
+        padding: 15px;
+    };
+}
